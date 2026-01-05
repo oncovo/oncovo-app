@@ -1,12 +1,25 @@
 # 🚀 Configuração do GitHub
 
+## ✅ Status Atual
+
+- ✅ Repositório Git inicializado
+- ✅ Commit inicial realizado
+- ✅ Branch principal: `main`
+- ⏳ Aguardando criação do repositório no GitHub
+
 ## 📋 Passos para fazer push do projeto
 
 ### 1. Criar o repositório no GitHub
 
-Acesse: https://github.com/organizations/oncovo/repositories/new
+**Opção A: Via Interface Web (Recomendado)**
+1. Acesse: https://github.com/organizations/oncovo/repositories/new
+2. Preencha:
+   - **Nome do repositório:** `oncovo-app` (ou outro nome de sua preferência)
+   - **Visibilidade:** Público ou Privado (conforme necessário)
+   - **⚠️ IMPORTANTE:** NÃO marque "Add a README file", "Add .gitignore" ou "Choose a license" (já temos esses arquivos)
+3. Clique em "Create repository"
 
-Ou use a CLI do GitHub:
+**Opção B: Via GitHub CLI**
 ```bash
 gh repo create oncovo/oncovo-app --public --source=. --remote=origin --push
 ```
@@ -18,34 +31,28 @@ gh repo create oncovo/oncovo-app --public --source=. --remote=origin --push
 
 ### 2. Configurar o remote e fazer push
 
-Após criar o repositório, execute:
+**Opção A: Usando o script PowerShell (Windows)**
+```powershell
+# Substitua "oncovo-app" pelo nome do repositório que você criou
+.\scripts\setup-github.ps1 -RepositoryName "oncovo-app"
 
+# Depois faça o push
+git push -u origin main
+```
+
+**Opção B: Comandos manuais**
 ```bash
-# Adicionar todos os arquivos
-git add .
-
-# Fazer commit inicial
-git commit -m "feat: initial project setup with Clean Architecture
-
-- React Native 0.83.1 with TypeScript
-- Clean Architecture structure
-- Version management (Android & iOS)
-- Unit tests setup with Jest
-- Expo Bare Workflow support
-- Configuration files for Supabase, Google Auth, and Notifications"
-
 # Adicionar remote (substitua SEU_REPOSITORIO pelo nome real)
 git remote add origin https://github.com/oncovo/SEU_REPOSITORIO.git
 
 # Ou se usar SSH:
 # git remote add origin git@github.com:oncovo/SEU_REPOSITORIO.git
 
-# Renomear branch principal para main (se necessário)
-git branch -M main
-
-# Fazer push
+# Fazer push (branch main já está configurada)
 git push -u origin main
 ```
+
+**Nota:** O commit inicial já foi feito! Você só precisa configurar o remote e fazer push.
 
 ### 3. Verificar
 
