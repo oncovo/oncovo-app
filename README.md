@@ -7,7 +7,6 @@ Aplicativo mobile desenvolvido com React Native seguindo as melhores práticas d
 - **React Native** 0.83.1
 - **TypeScript**
 - **Clean Architecture**
-- **Expo** (Bare Workflow - opcional, para EAS Build)
 - **Supabase** (Backend)
 - **Google Authentication**
 - **Push Notifications**
@@ -48,6 +47,7 @@ Toda a documentação técnica está na pasta [`docs/`](./docs/):
 - [Configuração GitHub](./docs/GITHUB_SETUP.md)
 - [Dependências](./docs/DEPENDENCIES.md)
 - [npm vs Yarn](./docs/NPM_VS_YARN.md)
+- [iOS sem Mac](./docs/IOS_WITHOUT_MAC.md) - Como rodar no iPhone sem ter Mac
 
 ## 🛠️ Configuração do Ambiente
 
@@ -97,17 +97,7 @@ npm run ios
 npm start
 ```
 
-### Com Expo (Opcional)
-```bash
-# Inicia com Expo CLI
-npm run start:expo
-
-# Executa com Expo
-npm run expo:run:android
-npm run expo:run:ios
-```
-
-> **Nota:** O projeto está preparado para usar Expo no modo Bare Workflow. Veja [docs/EXPO_SETUP.md](./docs/EXPO_SETUP.md) para mais detalhes.
+> **Nota:** O projeto usa React Native CLI. Para informações sobre Expo, veja [docs/EXPO_COMPATIBILITY.md](./docs/EXPO_COMPATIBILITY.md).
 
 ## 🧪 Testes
 
