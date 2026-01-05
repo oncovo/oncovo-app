@@ -49,7 +49,8 @@
   - Notification Service (`src/infrastructure/services/notification.service.ts`)
 
 ### 7. ✅ Documentação
-- ✅ README.md completo
+- ✅ README.md completo na raiz
+- ✅ Documentação técnica organizada em `docs/`
 - ✅ DEPENDENCIES.md com lista de dependências
 - ✅ .env.example criado
 - ✅ .gitignore atualizado

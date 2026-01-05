@@ -39,6 +39,16 @@ src/
     └── services/      # Serviços externos
 ```
 
+## 📚 Documentação
+
+Toda a documentação técnica está na pasta [`docs/`](./docs/):
+- [Índice da Documentação](./docs/README.md)
+- [Setup do Projeto](./docs/PROJECT_SETUP.md)
+- [Configuração Expo](./docs/EXPO_SETUP.md)
+- [Configuração GitHub](./docs/GITHUB_SETUP.md)
+- [Dependências](./docs/DEPENDENCIES.md)
+- [npm vs Yarn](./docs/NPM_VS_YARN.md)
+
 ## 🛠️ Configuração do Ambiente
 
 ### Pré-requisitos
@@ -97,7 +107,7 @@ npm run expo:run:android
 npm run expo:run:ios
 ```
 
-> **Nota:** O projeto está preparado para usar Expo no modo Bare Workflow. Veja [EXPO_SETUP.md](./EXPO_SETUP.md) para mais detalhes.
+> **Nota:** O projeto está preparado para usar Expo no modo Bare Workflow. Veja [docs/EXPO_SETUP.md](./docs/EXPO_SETUP.md) para mais detalhes.
 
 ## 🧪 Testes
 
